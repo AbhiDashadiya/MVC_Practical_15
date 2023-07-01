@@ -1,15 +1,17 @@
 ﻿using System.Web.Mvc;
 
-namespace Practical_15_Windows_Auth.Controllers
+namespace Practical_15_Form_AUth.Controllers
 {
-	[Authorize]
+	//[Authorize]
 	public class HomeController : Controller
 	{
+		[Authorize]
 		public ActionResult Index()
 		{
 			return View();
 		}
 
+		//[Authorize]
 		public ActionResult About()
 		{
 			ViewBag.Message = "Your application description page.";
@@ -17,11 +19,6 @@ namespace Practical_15_Windows_Auth.Controllers
 			return View();
 		}
 
-		public ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
 
-			return View();
-		}
 	}
 }
