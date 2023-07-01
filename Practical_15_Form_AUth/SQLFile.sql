@@ -10,3 +10,5 @@ create table Users
 )
 
 -- feeding some data to initial login
+
+insert into Users values ('abc','123'),('abhi','123')
