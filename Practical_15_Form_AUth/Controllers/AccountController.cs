@@ -55,7 +55,7 @@ namespace Practical_15_Form_AUth.Controllers
 			if (test != null)
 			{
 				TempData["Message"] = "User Already Registered try different or Signup";
-				return View();
+				return View(user);
 			}
 			db.Users.Add(user);
 			db.SaveChanges();
